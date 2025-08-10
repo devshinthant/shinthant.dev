@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react"
 import useOnScreen from "@/hooks/useOnScreen"
 import useScrollActive from "@/hooks/useScrollActive"
+import Loopy from "@/public/assets/projects/loopy.png"
 import MantineBoards from "@/public/assets/projects/mantine-boards.png"
 import MiroClone from "@/public/assets/projects/miro-clone.png"
 import MotionScape from "@/public/assets/projects/motion-scape.png"
@@ -164,6 +165,17 @@ const projects: Project[] = [
   },
   {
     id: 5,
+    title: "Loopy",
+    description:
+      "Loopy is a modern video conferencing app designed for seamless virtual meetings with real-time video, audio, and chat features. Built for speed, simplicity, and collaboration.",
+    techStacks: ["ReactJs", "WebRTC", "Mediasoup", "Socket.io"],
+    image: Loopy,
+    githubURL: "https://github.com/devshinthant/loopy",
+    liveURL: "https://loopy-ashen.vercel.app/",
+    githubApi: "https://api.github.com/repos/devshinthant/loopy",
+  },
+  {
+    id: 6,
     title: "Valentin Carousel",
     description:
       "An animated carousel inspired by Valentin Awward Winning Website",
@@ -174,7 +186,7 @@ const projects: Project[] = [
     githubApi: "https://api.github.com/repos/devshinthant/valentin-carousel",
   },
   {
-    id: 6,
+    id: 7,
     title: "TheRealHotels",
     description:
       "A Landing Website Inspired by awwarded website,therealhotels.com",
@@ -185,7 +197,7 @@ const projects: Project[] = [
     githubApi: "https://api.github.com/repos/devshinthant/therealhotels",
   },
   {
-    id: 7,
+    id: 8,
     title: "Miro Clone",
     description:
       "Enjoy a wide range of brushes, colors, and effects, along with layers, undo/redo functionality, and easy sharing options.",
