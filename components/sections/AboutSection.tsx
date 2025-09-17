@@ -72,7 +72,7 @@ export default function AboutSection() {
           )
 
           tl.to(q(".experience-count"), {
-            innerText: 2,
+            innerText: 3,
             duration: 0.5,
             snap: {
               innerText: 1,
@@ -82,7 +82,7 @@ export default function AboutSection() {
           tl.to(
             q(".project-count"),
             {
-              innerText: 15,
+              innerText: 30,
               duration: 0.5,
               snap: {
                 innerText: 1,
@@ -160,7 +160,7 @@ export default function AboutSection() {
             <div className="flex flex-col items-start gap-4">
               <div className="overflow-hidden">
                 <div className="dark:text-white text-animation">
-                  With over 2 years of experience as a frontend developer, I
+                  With over 3 years of experience as a fullstack developer, I
                   specialize in crafting responsive and user-friendly web
                   applications. I excel in creating intuitive interfaces and
                   enjoy working in collaborative, agile environments.
@@ -176,9 +176,8 @@ export default function AboutSection() {
                 <div className="text-accentColor">NCC Education</div>
                 <div className="overflow-hidden">
                   <div className="dark:text-white text-animation">
-                    Joined Level 3 Program to embark on an enriching educational
-                    journey designed to build a solid foundation in key
-                    subjects.
+                    Attending Higher National Diploma in Computing (NCC)
+                    Program.
                   </div>
                 </div>
               </div>

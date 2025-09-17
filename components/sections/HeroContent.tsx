@@ -54,15 +54,15 @@ export default function HeroContent() {
           <span className="bg-[linear-gradient(#fff,rgba(255,255,255,.6))] inline-block text-transparent bg-clip-text">
             A
           </span>{" "}
-          <span className="text-accentColor">Front-End</span>{" "}
+          <span className="text-accentColor">Software</span>{" "}
           <span className="bg-[linear-gradient(#000000,rgba(255,255,255,.6))] dark:bg-[linear-gradient(#fff,rgba(255,255,255,.6))] inline-block text-transparent bg-clip-text">
-            Developer
+            Engineer
           </span>
         </div>
       </div>
 
       <div className="w-[300px] md:w-[370px] relative z-30 text-center text-sm dark:bg-[linear-gradient(#fff,rgba(255,255,255,.6))] inline-block text-black dark:text-transparent bg-clip-text">
-        Passionate and detail-oriented frontend developer with a knack for
+        Passionate and detail-oriented software developer with a knack for
         creating visually appealing and user-friendly web interfaces
       </div>
 
