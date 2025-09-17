@@ -22,7 +22,10 @@ export default function MobileNav() {
           <span className="sr-only">Toggle Navbar</span>
         </Button>
       </SheetTrigger>
-      <SheetContent className="w-full h-full border-0">
+      <SheetContent
+        style={{ zIndex: 1000 }}
+        className="w-full  h-full [&>svg]:text-zinc-900 border-0"
+      >
         <div className="py-20 w-full flex flex-col absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 gap-10 items-center">
           {navlinks.map((navLink) => (
             <div
