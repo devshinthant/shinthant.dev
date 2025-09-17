@@ -69,7 +69,7 @@ export default function ResumeBtn() {
   return (
     <a
       role="button"
-      href="https://bronze-petronilla-20.tiiny.site/"
+      href="https://drive.google.com/file/d/1p3CGZD1DWWtKEj6krAy56bhBidAnEZTB/view"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Resume"
