@@ -4,8 +4,10 @@ import HeroSpinner from "@/public/assets/hero/hero-spinner.webp"
 import Source from "@/public/assets/hero/source.png"
 import heroLottieData from "@/public/assets/lottie/hero-lottie.json"
 import { gsap } from "gsap"
-import Lottie from "lottie-react"
+import dynamic from "next/dynamic"
 import Image from "next/image"
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false })
 
 export default function HeroTool() {
   const firstSpinnerRef = useRef(null)
