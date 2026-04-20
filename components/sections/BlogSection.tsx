@@ -3,14 +3,10 @@
 import { useEffect, useRef } from "react"
 import useOnScreen from "@/hooks/useOnScreen"
 import useScrollActive from "@/hooks/useScrollActive"
-import ComingSoon1 from "@/public/assets/blog/coming-soon-1.jpg"
-import ComingSoon2 from "@/public/assets/blog/coming-soon-2.jpg"
-import SpaceCat from "@/public/assets/blog/space-cat.webp"
 import { useSectionStore } from "@/store/section"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
 import { ArrowRight } from "iconsax-react"
-import { StaticImageData } from "next/image"
 import Link from "next/link"
 import { RoughNotation } from "react-rough-notation"
 import BlogCard from "../BlogCard"
@@ -73,11 +69,12 @@ export default function BlogSection() {
           </RoughNotation>
           <div ref={elementRef} className="overflow-hidden flex flex-col gap-1">
             <div className="qoutes-animation mx-auto text-center text-sm dark:text-white flex flex-col items-center font-normal">
-              I document my journey by writing blog posts about my projects and
-              experiences.
+              At <span className="text-accentColor">Chopper Blog</span> I write
+              notes on kernels, networking, containers, and Kubernetes—how
+              things work under the hood, in plain language.
             </div>
             <div className="qoutes-animation mx-auto text-center text-sm dark:text-white flex flex-col items-center font-normal">
-              <div>Check out some of my latest entries below. 🚀</div>
+              <div>Here are a few recent posts.</div>
             </div>
           </div>
         </div>
@@ -89,14 +86,14 @@ export default function BlogSection() {
         </div>
 
         <Link
-          href={"https://medium.com/@shinthantequi"}
+          href="https://blog.shinthant.dev/blog"
           target="_blank"
-          aria-label="Follow up on my medium account"
+          aria-label="Read more posts on Chopper Blog at blog.shinthant.dev"
           rel="noopener noreferrer"
           className="flex items-center gap-2"
         >
           <div className="text-accentColor navlink text-sm italic">
-            Follow up on my medium
+            Read the full archive on blog.shinthant.dev
           </div>
           <ArrowRight color="white" size={15} />
         </Link>
@@ -109,7 +106,7 @@ export interface Blog {
   id: number
   title: string
   description: string
-  image: StaticImageData
+  image: string
   publishAt: string
   link: string
 }
@@ -117,29 +114,29 @@ export interface Blog {
 const blogs: Blog[] = [
   {
     id: 1,
-    title: "The Mystery of React Children Re-rendering",
+    title: "DNS (Domain Name System)",
     description:
-      "Component rendering is important for the overall performance of the app. So, although it seems simple, I want to share the complex children render logic.",
-    image: SpaceCat,
-    publishAt: "2024, March 10",
-    link: "https://medium.com/@shinthantequi/the-mystery-of-react-children-re-rendering-3544a68944f4",
+      "Hierarchical DNS, name resolution flow, recursive resolver, root and TLD servers, authoritative DNS, caching, and TTL.",
+    image: "/assets/blog/dns.svg",
+    publishAt: "Apr 19, 2026",
+    link: "https://blog.shinthant.dev/blog/dns/",
   },
   {
     id: 2,
-    title: "Testing 1",
+    title: "Kernel terminal devices",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique sequi ex quisquam ullam corrupti neque dolores ad provident magnam?",
-    image: ComingSoon1,
-    publishAt: "2022, March 10",
-    link: "",
+      "/dev/tty and /dev/pts, getty, virtual consoles, display servers, terminal emulators, and master/slave pseudo terminals.",
+    image: "/assets/blog/kernel-terminal.svg",
+    publishAt: "Apr 19, 2026",
+    link: "https://blog.shinthant.dev/blog/kernel-terminal-devices/",
   },
   {
     id: 3,
-    title: "Testing 2",
+    title: "IPVS",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique sequi ex quisquam ullam corrupti neque dolores ad provident magnam?",
-    image: ComingSoon2,
-    publishAt: "2024, January 15",
-    link: "",
+      "Kernel layer 4 load balancing: virtual servers, packet flow, algorithms, and forwarding modes (DR, NAT, TUN).",
+    image: "/assets/blog/ipvs.svg",
+    publishAt: "Apr 19, 2026",
+    link: "https://blog.shinthant.dev/blog/ipvs/",
   },
 ]

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" fill="none" aria-hidden="true">
+  <rect width="200" height="120" rx="8" fill="hsl(220 14% 10%)"/>
+  <rect x="12" y="14" width="176" height="92" rx="6" stroke="hsl(210 12% 28%)" stroke-width="1.5"/>
+  <rect x="12" y="14" width="176" height="22" rx="6" fill="hsl(220 14% 16%)"/>
+  <circle cx="26" cy="25" r="4" fill="hsl(0 62% 50%)" opacity="0.85"/>
+  <circle cx="40" cy="25" r="4" fill="hsl(45 90% 48%)" opacity="0.85"/>
+  <circle cx="54" cy="25" r="4" fill="hsl(142 50% 42%)" opacity="0.85"/>
+  <rect x="24" y="52" width="10" height="3" rx="1" fill="hsl(157 87% 48%)"/>
+  <rect x="40" y="48" width="120" height="2.5" rx="1" fill="hsl(210 12% 38%)"/>
+  <rect x="40" y="58" width="90" height="2.5" rx="1" fill="hsl(210 12% 32%)"/>
+  <rect x="40" y="68" width="100" height="2.5" rx="1" fill="hsl(210 12% 28%)"/>
+  <rect x="24" y="84" width="8" height="14" rx="2" stroke="hsl(157 87% 41% / 0.55)" stroke-width="1.2"/>
+  <path d="M32 91h20" stroke="hsl(157 87% 41% / 0.45)" stroke-width="1.2" stroke-linecap="round"/>
+  <rect x="56" y="86" width="14" height="10" rx="2" stroke="hsl(210 12% 45%)" stroke-width="1"/>
+</svg>
